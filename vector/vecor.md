@@ -7,3 +7,13 @@
 `std::vector` maintains two important pieces of state information: capacity and size. Capacity represents the currently allocated memory space of the vector, while size represents the number of elements currently contained in the vector. When elements are added to the vector, if the number of elements exceeds the capacity, memory reallocation is required.
 
 [Detail](MemoryManagement.md)
+
+## Basic Usage of vector
+
+It is located in the `<vector>` header file, which needs to be included when using it:
+
+```c++
+#include <vector>
+```
+
+[Creation, Initialization, and Element Access](basic.cpp)
