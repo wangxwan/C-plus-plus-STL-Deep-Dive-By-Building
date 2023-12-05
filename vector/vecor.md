@@ -36,3 +36,9 @@ The code above implements a simplified version of the `MyVector` class, but ther
 
 [Detail](Differences.md)
 
+## Related Interview Questions
+
+`std::vector` from the C++ Standard Template Library (STL) is a common topic in interviews because it's a fundamental container for representing dynamic arrays. Here are some common interview questions about `std::vector` and their answers:
+
+[Detail](Interview.md)
+
