@@ -30,3 +30,9 @@ The Vector class includes a constructor, destructor, copy constructor, copy assi
 
 [Detail](Implementation.md)
 
+## Differences between this implementation and the C++ STL standard library implementation:
+
+The code above implements a simplified version of the `MyVector` class, but there are some key differences in practical applications. Here are some of the main differences:
+
+[Detail](Differences.md)
+
