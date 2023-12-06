@@ -1,6 +1,6 @@
 # C++ STL Deep Dive By Building
 
-Welcome! This repository houses a hands-on project for delving deep into the C++ Standard Template Library (STL) by building a simplified version of it yourself.
+This repository houses a hands-on project for delving deep into the C++ Standard Template Library (STL) by building a simplified version of it yourself.
 
 ## Motivation
 
@@ -10,7 +10,7 @@ This project aims to foster a thorough understanding of the C++ STL not through 
 
 This repository contains both detailed learning notes and the implementation process for various STL components, categorized as follows:
 
-- **Dynamic Arrays:** [vector](./vector)
+- **Dynamic Arrays:** [vector](./vector/vecor.md)
 - **Doubly Linked Lists:** [list](./list)
 - **Double-Ended Queues:** [deque](./deque)
 - **Hash Tables:** [hashtable](./hashtable)

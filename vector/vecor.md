@@ -1,5 +1,11 @@
 # Vector
 
+[Problem Description](Problem.md)
+
+[Solution](Implementation.cpp)
+
+
+
 `std::vector` is a dynamic array that stores elements in a contiguous block of memory. Unlike static arrays, `std::vector` allows dynamic resizing at runtime without manual memory management.
 
 ## Memory Management
