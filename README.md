@@ -11,7 +11,7 @@ This project aims to foster a thorough understanding of the C++ STL not through 
 This repository contains both detailed learning notes and the implementation process for various STL components, categorized as follows:
 
 - **Dynamic Arrays:** [vector](./vector/vecor.md)
-- **Doubly Linked Lists:** [list](./list)
+- **Doubly Linked Lists:** [list](./list/list.md)
 - **Double-Ended Queues:** [deque](./deque)
 - **Hash Tables:** [hashtable](./hashtable)
 - **Red-Black Trees:** [redblacktree](./redblacktree)
