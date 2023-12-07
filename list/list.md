@@ -24,3 +24,31 @@ Random Access: If random access to elements via index is needed, using `vector` 
 
 Memory Usage: Because `list` uses a linked list structure, it might introduce some additional memory overhead.  `vector` and `deque` might be more memory-compact.
 
+## Basic Usage of `list` in the C++ Standard Library
+
+To use `list`, you first need to include the relevant header file:
+
+```c++
+#include <list>
+```
+
+Next, you can declare a `list` object and start using it:
+
+```c++
+std::list<int> myList;
+```
+
+You can insert elements at the front and back of the `list` using `push_front` and `push_back`:
+
+```c++
+myList.push_front(1);
+myList.push_back(2);
+```
+
+Use `pop_front` and `pop_back` to remove elements from the front and back of the `list`:
+
+```c++
+myList.pop_front();
+myList.pop_back();
+```
+
