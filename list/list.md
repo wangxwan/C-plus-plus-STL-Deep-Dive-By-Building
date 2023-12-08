@@ -2,6 +2,8 @@
 
 [Problem Description](Problem.md)
 
+[Solution](Implementation.cpp)
+
 
 `std::list` and `std::vector` are two distinct data structures. `std::vector` is a dynamic array based on arrays, while `std::list` is a data structure based on a doubly linked list.
 
@@ -54,4 +56,11 @@ Use `pop_front` and `pop_back` to remove elements from the front and back of the
 myList.pop_front();
 myList.pop_back();
 ```
+
+## Implementing `list`
+
+This example demonstrates the basic functionality of the `List` class, including adding elements to the end and beginning of the list, accessing elements, deleting elements from the end and beginning, and clearing the list.
+
+[Detail](Implementation.md)
+
 
