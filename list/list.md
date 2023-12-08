@@ -64,3 +64,7 @@ This example demonstrates the basic functionality of the `List` class, including
 [Detail](Implementation.md)
 
 
+## High-Frequency Interview Questions
+
+[Detail](Interview.md)
+
