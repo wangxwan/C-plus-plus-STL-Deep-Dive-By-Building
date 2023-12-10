@@ -28,3 +28,32 @@ This is because `std::deque` uses a segmented array structure. Each segment is a
 Note that while `std::deque` provides constant-time random access, it might involve more levels of indirection compared to `std::vector`.  Therefore, in some cases, `std::vector` might exhibit slightly better random access performance.
 
 When choosing a container, the trade-offs between different containers should be considered based on the specific use case and requirements.
+
+
+## Basic Usage of `deque` in the STL
+
+To use `deque`, you first need to include the relevant header file:
+
+```cpp
+#include <deque>
+```
+
+Next, you can declare a `deque` object and start using it:
+
+```cpp
+std::deque<int> myDeque;
+```
+
+You can use `push_front` and `push_back` to insert elements at the front and back of the `deque`, respectively:
+
+```cpp
+myDeque.push_front(1);
+myDeque.push_back(2);
+```
+
+Use `pop_front` and `pop_back` to remove elements from the front and back of the `deque`, respectively:
+
+```cpp
+myDeque.pop_front();
+myDeque.pop_back();
+```
