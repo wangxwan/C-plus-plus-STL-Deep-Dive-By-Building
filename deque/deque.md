@@ -90,3 +90,9 @@ This section describes a template class `Deque` that simulates a double-ended qu
 (Note:  The actual implementation of a `Deque` class using a circular array would require significantly more code than what can be reasonably included in this response. This description provides a conceptual overview.)
 
 
+## Implementing a Deque
+
+This implementation uses a dynamic array and pointers to achieve basic deque operations.  Adding and removing elements from both the front and back of the deque are simulated using array indices.
+
+[Detail](Implementation.md)
+
