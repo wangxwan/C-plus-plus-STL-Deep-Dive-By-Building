@@ -96,3 +96,13 @@ This implementation uses a dynamic array and pointers to achieve basic deque ope
 
 [Detail](Implementation.md)
 
+## Differences Between This Implementation and the C++ STL Standard Library Implementation:
+
+- **Data Structure:** The standard library's `std::deque` is typically implemented using one or more contiguous memory regions (i.e., one-dimensional arrays), not a single contiguous array.  These multiple arrays are linked together to form the `deque`. The current implementation uses a circular array.  The drawback is that `resize` requires copying the old array, while the official `std::deque` only needs to concatenate another one-dimensional array, which is more efficient.  Advantages of this implementation include:
+  - Better performance in scenarios that don't require `resize`.
+  - Simpler implementation logic.
+- **Memory Management:** In the actual STL, memory management is typically more complex and efficient. The STL uses allocators to manage memory instead of directly using `new` and `delete`. Allocators allow users to provide custom memory management strategies.
+- **Exception Safety:** The actual STL usually considers exception safety. In the example, if `pop_front` or `pop_back` encounters an empty Deque, it throws an exception. In the STL, many operations are designed to have a degree of exception safety to ensure that resource leaks don't occur when exceptions happen.
+- **Iterator and Algorithm Support:** The STL provides extensive iterator and algorithm support, allowing for generic manipulation of containers. In the example, while basic iterators are provided, STL iterator ranges and algorithms are not involved.
+- **Performance Optimization:** The actual STL library typically incorporates more performance optimizations, including the use of more sophisticated data structures and considerations for cache friendliness.  Furthermore, containers and algorithms in the STL often auto-select based on usage to provide optimal performance.
+- **Standard Compliance:** The actual STL adheres to the C++ standard, ensuring consistent behavior across different platforms and compilers. It also provides many other features, such as allocator customization and iterator tags, to meet the requirements of the C++ standard.
