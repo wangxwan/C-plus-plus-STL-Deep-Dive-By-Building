@@ -106,3 +106,9 @@ This implementation uses a dynamic array and pointers to achieve basic deque ope
 - **Iterator and Algorithm Support:** The STL provides extensive iterator and algorithm support, allowing for generic manipulation of containers. In the example, while basic iterators are provided, STL iterator ranges and algorithms are not involved.
 - **Performance Optimization:** The actual STL library typically incorporates more performance optimizations, including the use of more sophisticated data structures and considerations for cache friendliness.  Furthermore, containers and algorithms in the STL often auto-select based on usage to provide optimal performance.
 - **Standard Compliance:** The actual STL adheres to the C++ standard, ensuring consistent behavior across different platforms and compilers. It also provides many other features, such as allocator customization and iterator tags, to meet the requirements of the C++ standard.
+
+
+## High-Frequency Interview Questions
+
+[Detail](Interview.md)
+
