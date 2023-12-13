@@ -1,5 +1,10 @@
 # HashTable
 
+[Problem Description](Problem.md)
+
+[Solution](Implementation.cpp)
+
+
 In the Standard Template Library (STL), the `HashTable` is a crucial underlying data structure.  Unordered associative containers like `unordered_set` and `unordered_map` are internally implemented based on hash tables. This article delves into the internal workings of `HashTable`, covering aspects such as hash functions, collision resolution, iterators, and performance optimization.
 
 ## HashTable Internal Analysis
