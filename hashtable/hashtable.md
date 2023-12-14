@@ -46,3 +46,9 @@ Implementing a full-fledged hash table involves complex hash table design and ma
 
 [Detail](Implementation.md)
 
+## Differences from the Standard Library
+
+The implemented hash table is a simplified version that uses linked lists to handle hash collisions. This method is also known as separate chaining.  Here are some differences between our implementation and `std::unordered_set` or `std::unordered_map` in the Standard Template Library (STL):
+
+[Detail](Differences.md)
+
