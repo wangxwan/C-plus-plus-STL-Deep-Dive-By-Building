@@ -38,3 +38,11 @@ In a multithreaded environment, ensuring the correctness of the data structure i
 Multithreaded hash table implementations usually consider concurrency and thread safety, employing locks or other mechanisms to protect the shared data structure.
 
 `rehashing` is triggered when the length of any `bucket`'s linked list exceeds 1. Each `bucket` uses a linked list to store colliding elements.
+
+
+## HashTable Code Implementation
+
+Implementing a full-fledged hash table involves complex hash table design and management, including hash functions, collision resolution, and `rehashing`.
+
+[Detail](Implementation.md)
+
