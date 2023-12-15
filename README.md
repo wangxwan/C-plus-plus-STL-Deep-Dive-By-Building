@@ -12,9 +12,9 @@ This repository contains both detailed learning notes and the implementation pro
 
 - **Dynamic Arrays:** [vector](./vector/vecor.md)
 - **Doubly Linked Lists:** [list](./list/list.md)
-- **Double-Ended Queues:** [deque](./deque)
-- **Hash Tables:** [hashtable](./hashtable)
-- **Red-Black Trees:** [redblacktree](./redblacktree)
+- **Double-Ended Queues:** [deque](./deque/deque.md)
+- **Hash Tables:** [hashtable](./hashtable/hashtable.md)
+- **Red-Black Trees:** [redblacktree](./redblacktree/redblacktree.md)
 - **Ordered Sets:** [set](./set)
 - **Unordered Sets:** [unordered_set](./unordered_set)
 - **Ordered Multisets:** [multiset](./multiset)
