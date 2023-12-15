@@ -52,3 +52,8 @@ The implemented hash table is a simplified version that uses linked lists to han
 
 [Detail](Differences.md)
 
+
+## Common Hash Table Interview Questions
+
+[Detail](Interview.md)
+
