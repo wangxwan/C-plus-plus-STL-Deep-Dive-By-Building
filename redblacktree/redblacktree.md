@@ -19,3 +19,8 @@ A red-black tree is a self-balancing binary search tree that adds an extra attri
 Let's describe the insertion process:
 
 [Detail](Workflow.md)
+
+
+## Code Implementation
+
+[Detail](Implementation.md)
