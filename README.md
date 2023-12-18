@@ -15,7 +15,7 @@ This repository contains both detailed learning notes and the implementation pro
 - **Double-Ended Queues:** [deque](./deque/deque.md)
 - **Hash Tables:** [hashtable](./hashtable/hashtable.md)
 - **Red-Black Trees:** [redblacktree](./redblacktree/redblacktree.md)
-- **Ordered Sets:** [set](./set)
+- **Ordered Sets:** [set](./set/set.md)
 - **Unordered Sets:** [unordered_set](./unordered_set)
 - **Ordered Multisets:** [multiset](./multiset)
 - **Ordered Maps:** [map](./map)
