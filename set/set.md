@@ -28,3 +28,9 @@ Red-Black Trees have been previously introduced and won't be detailed here.  Ess
 
 Each element in `std::set` maps to a node in the Red-Black Tree.  Because the Red-Black Tree maintains order and uniqueness, no extra processing of nodes is needed; only ensuring the node data type supports comparison operator overloading is required.
 
+## Code Implementation
+
+Based on a previously implemented Red-Black Tree class (assuming its definition and implementation are in `RedBlackTree.h`), a simplified `Set` implementation would look like this:
+
+
+[Detail]()
