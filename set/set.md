@@ -45,3 +45,56 @@ This simplified Red-Black Tree implementation differs significantly from the C++
 3. **Template Specialization and Configuration:** C++ STL containers are configurable and specializable, allowing users to provide custom comparators, allocators, etc. The simplified version doesn't consider these configuration options.
 4. **Iterators and Algorithms:** C++ STL containers usually come with iterators, facilitating the use of STL algorithms. The simplified version lacks these features.
 5. **Memory Management:** The C++ STL implementation typically uses efficient memory management techniques, while the simplified version may not consider these optimizations.
+
+
+## Frequently Asked Interview Questions
+
+1. **How to check if a value exists in `std::set`?**
+
+   Use the `find` method.  If the element is found, `find` returns an iterator to it; otherwise, it returns `end()`.
+
+   ```cpp
+   std::set<int> mySet{1, 2, 3};
+   if (mySet.find(2) != mySet.end()) {
+       std::cout << "Found the element." << std::endl;
+   } else {
+       std::cout << "Element not found." << std::endl;
+   }
+   ```
+
+2. **What is the iterator type of `std::set`?**
+
+   `std::set` iterators are bidirectional iterators.  They allow forward (`++`) and backward (`--`) traversal but not random access.
+
+3. **What's the difference between `std::set` and `std::unordered_set`?**
+
+   `std::set` is based on a Red-Black Tree (elements are sorted), while `std::unordered_set` is based on a hash table (elements are unordered).  `std::set` operations (insertion, deletion, search) typically have logarithmic time complexity (O(log n)), while `std::unordered_set` operations have average constant time complexity (O(1)) but can degrade to linear time complexity (O(n)) in the worst case.
+
+4. **How to get the size of a `std::set`?**
+
+   Use the `size` method.
+
+   ```cpp
+   std::set<int> mySet{1, 2, 3};
+   std::cout << "The set size is: " << mySet.size() << std::endl;
+   ```
+
+5. **How does `std::set` maintain element ordering?**
+
+   `std::set` is implemented using a Red-Black Tree, a self-balancing binary search tree.  The Red-Black Tree maintains balance through rotations and recoloring, ensuring ordered elements and efficient operation performance.
+
+6. **Why are `std::set` operations logarithmic time complexity?**
+
+   Because `std::set` is based on a Red-Black Tree, a self-balancing binary search tree, it guarantees that basic operations (insertion, search, deletion) have a time complexity of O(log n) in the worst case, where n is the number of elements.  This is because the tree's height remains logarithmic, and all operations traverse a root-to-leaf path.
+
+7. **How is a new element inserted into `std::set`?**
+
+   When inserting a new element, the Red-Black Tree places it in the correct position according to binary search tree properties. If the insertion violates Red-Black Tree properties, node coloring and tree rotations restore these properties.
+
+8. **What happens when an element is deleted from `std::set`?**
+
+   Deleting an element might violate Red-Black Tree properties.  Complex adjustments, including node color changes and tree rotations, maintain balance.
+
+9. **When do iterators in `std::set` become invalid?**
+
+   Iterator invalidation in `std::set` primarily occurs due to element deletion.  Deleting an element invalidates iterators pointing to that element. However, other iterators remain valid because of the Red-Black Tree's properties.  Insertion does not invalidate existing iterators because `std::set` elements are immutable; inserting a new element doesn't change existing element positions.
