@@ -1,4 +1,4 @@
-# std::set`
+# `std::set`
 
 ## Introduction
 
@@ -33,4 +33,15 @@ Each element in `std::set` maps to a node in the Red-Black Tree.  Because the Re
 Based on a previously implemented Red-Black Tree class (assuming its definition and implementation are in `RedBlackTree.h`), a simplified `Set` implementation would look like this:
 
 
-[Detail]()
+[Detail](Implementation.md)
+
+
+## Differences from the Standard Library
+
+This simplified Red-Black Tree implementation differs significantly from the C++ STL `std::set` in several key aspects:
+
+1. **Performance and Optimization:** The C++ STL implementation is heavily optimized for performance, handling various edge cases and special situations. The simplified version lacks these optimizations.
+2. **Exception Handling:** The C++ STL implementation typically includes exception handling for situations like memory allocation failures. The simplified version doesn't address this.
+3. **Template Specialization and Configuration:** C++ STL containers are configurable and specializable, allowing users to provide custom comparators, allocators, etc. The simplified version doesn't consider these configuration options.
+4. **Iterators and Algorithms:** C++ STL containers usually come with iterators, facilitating the use of STL algorithms. The simplified version lacks these features.
+5. **Memory Management:** The C++ STL implementation typically uses efficient memory management techniques, while the simplified version may not consider these optimizations.
