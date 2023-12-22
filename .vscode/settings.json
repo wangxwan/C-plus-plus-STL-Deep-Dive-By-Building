@@ -52,6 +52,15 @@
         "algorithm": "cpp",
         "optional": "cpp",
         "sstream": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "deque": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "random": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp"
     }
 }
