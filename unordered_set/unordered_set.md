@@ -21,3 +21,20 @@ Based on a previously implemented HashTable (defined and implemented in `hashTab
 [Detail](Implementation.md)
 
 
+## Differences from the Standard Library
+
+This code is a highly simplified simulation, not a precise implementation of `std::unordered_set`.  Here are key differences:
+
+1. **Functionality:** `std::unordered_set` offers a complete feature set including iterator support, element access, bucket interface, load factor control, customizable hash and equality policies, etc.  Our `Unordered_set` is basic.
+2. **Iterator Support:** `std::unordered_set` provides iterators for traversal.  Our implementation lacks this.
+3. **Exception Safety:** `std::unordered_set` members usually offer strong exception guarantees.  Our implementation lacks exception handling.
+4. **Type Restrictions:** `std::unordered_set` requires hashable and equality-comparable key types.  Our implementation implicitly requires this but doesn't explicitly state it.
+5. **Memory Management:** `std::unordered_set` optimizes memory management (e.g., reclaiming memory after deletion). Our implementation doesn't detail memory management.
+6. **Performance:** `std::unordered_set` is optimized for performance. Our `Unordered_set`'s performance depends on the `HashTable` implementation.
+7. **Method Naming and Return Types:** Standard library uses standard naming conventions (e.g., `find` returns an iterator, not a boolean).
+8. **Portability:** `std::unordered_set` is standard library; behavior is consistent across platforms. Our `Unordered_set` may not be as portable.
+9. **Constructors and Destructors:** `std::unordered_set` provides various constructors (copy, move, etc.). Our implementation only provides a default constructor and destructor.
+10. **Copy Control:** `std::unordered_set` defines copy constructor, move constructor, copy assignment operator, and move assignment operator.  Our class doesn't explicitly define these, potentially leading to issues if `HashTable` doesn't handle them correctly.
+
+
+For learning or simplified use in specific contexts, our `Unordered_set` might suffice. However, for a robust, general-purpose container, `std::unordered_set` is far more reliable and efficient.
