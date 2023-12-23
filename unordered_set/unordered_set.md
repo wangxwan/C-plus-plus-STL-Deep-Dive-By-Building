@@ -38,3 +38,30 @@ This code is a highly simplified simulation, not a precise implementation of `st
 
 
 For learning or simplified use in specific contexts, our `Unordered_set` might suffice. However, for a robust, general-purpose container, `std::unordered_set` is far more reliable and efficient.
+
+
+## Common Interview Questions on `unordered_set`
+
+1. What are the differences between `std::unordered_set` and `std::set`?
+
+The main differences lie in their underlying data structures and performance characteristics. `std::set` uses a red-black tree, maintaining sorted elements, while `std::unordered_set` uses a hash table, with no guaranteed element order.  `std::unordered_set` generally offers faster insertion, deletion, and lookup, but doesn't support ordered access or range queries.
+
+2. How does `std::unordered_set` handle collisions?
+
+`std::unordered_set` uses separate chaining (linked lists) to handle hash collisions. When two elements hash to the same location, they are stored in a linked list within that bucket.  Lookup involves hashing and then traversing the linked list in the corresponding bucket.
+
+3. How can you customize the hash function and equality function for elements in `std::unordered_set`?
+
+When declaring `std::unordered_set`, you can provide custom hash and equality predicate types as template arguments. The custom hash function must take a single argument (the element type) and return its hash value. The custom equality function compares two elements for equality.
+
+4. What is the iterator type of `std::unordered_set`, and how are they affected by modifications to the hash table?
+
+`std::unordered_set` provides forward iterators (both const and non-const). Iterators traverse the hash table's buckets and then the linked lists within each bucket. Adding or removing elements might cause rehashing, potentially invalidating existing iterators. However, deleting the element the iterator currently points to is safe.
+
+5. How can you optimize the performance of `std::unordered_set`?
+
+Optimizing `std::unordered_set` performance often involves choosing a good hash function to minimize collisions and maintain a uniform element distribution. You can increase the number of buckets using `rehash` or pre-allocate sufficient space using `reserve` to reduce rehashing.
+
+6. How does `std::unordered_set` handle element deletion?
+
+Deletion involves finding the bucket corresponding to the element's hash value and then removing the element from the linked list in that bucket.  The average time complexity is O(1), but it can be O(n) in the worst case (if a bucket has many elements).
