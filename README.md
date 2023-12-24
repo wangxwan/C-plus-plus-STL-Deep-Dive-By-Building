@@ -17,7 +17,7 @@ This repository contains both detailed learning notes and the implementation pro
 - **Red-Black Trees:** [redblacktree](./redblacktree/redblacktree.md)
 - **Ordered Sets:** [set](./set/set.md)
 - **Unordered Sets:** [unordered_set](./unordered_set/unordered_set.md)
-- **Ordered Multisets:** [multiset](./multiset)
+- **Ordered Multisets:** [multiset](./multiset/multiset.md)
 - **Ordered Maps:** [map](./map)
 - **Unordered Maps:** [unordered_map](./unordered_map)
 - **Ordered Multimaps:** [multimap](./multimap)
