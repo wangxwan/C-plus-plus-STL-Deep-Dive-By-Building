@@ -17,3 +17,8 @@ Internally, a `multiset` is typically implemented using a red-black tree, a self
 2. **Search Performance:** The ordered nature of the red-black tree also results in good search performance, with an average time complexity of O(log n).
 3. **Memory Overhead:** The internal implementation of a `multiset` typically requires extra memory to store the red-black tree nodes, resulting in potentially higher memory overhead compared to some other containers.
 4. **Use Cases:** `multiset` is suitable for scenarios requiring ordered storage of elements that allow duplicates, such as maintaining a collection of events sorted by timestamp.
+
+
+## Basic Usage of `multiset` in the C++ Standard Library
+
+[Usage](usage.cpp)
