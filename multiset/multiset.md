@@ -41,3 +41,9 @@ Based on a previously implemented `RedBlackTree` (assuming its class definition 
 
 [Detail](Implementation.md)
 
+
+## Differences from the Standard Library
+
+The C++ STL's `multiset` implementation is significantly more complex, incorporating numerous optimizations and engineering details.  Here are some key differences between this simplified code and the STL implementation:
+
+[Detail](Differences.md)
