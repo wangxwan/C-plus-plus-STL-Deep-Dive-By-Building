@@ -1,5 +1,9 @@
-
 # Multiset
+
+[Problem Description](Problem.md)
+
+[Solution](Solution.cpp)
+
 
 A `multiset` is an ordered container that allows duplicate elements and stores them in a sorted order based on their values.
 
