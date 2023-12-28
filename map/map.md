@@ -17,3 +17,10 @@ In the C++ Standard Template Library (STL), `std::map` is a highly useful and po
 - **Lookup:** The time complexity of lookup is also O(log n).  Due to the ordered nature of `std::map`, any key can be located quickly.
 - **Deletion:** The time complexity of deletion is likewise O(log n). The element to be deleted needs to be found and removed while maintaining the balance of the tree.
 - **Iteration:** Iterating through `std::map` has a time complexity of O(n), as each element in the container needs to be visited.
+
+
+## Basic Usage of `std::map` in the C++ Standard Library
+
+[This code demonstrates the basic usage of `std::map`.](usage.cpp)
+
+
