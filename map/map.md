@@ -31,6 +31,18 @@ In the C++ Standard Template Library (STL), `std::map` is a highly useful and po
 
 ## Implementing `map`
 
-[Detail](Implementation.md)
+
+[This code uses a previously implemented red-black tree.](Implementation.cpp)
 
 
+## Differences Between This Code and the C++ Standard Library's `std::map`
+
+1. **Feature Completeness:** The above code only implements basic insertion, lookup, and deletion functionalities. It doesn't consider all the features of `std::map`, such as iterators, comparators, exception safety, etc. `std::map` provides a wider range of functionalities, including `lower_bound`, `upper_bound`, `equal_range`, etc.
+
+2. **Performance and Optimization:** The C++ standard library implementation typically incorporates extensive performance and memory optimizations, considering efficient operation under various conditions.  A real `std::map` implementation might use more sophisticated techniques like memory pools for node allocation and management, iterator optimizations, etc.
+
+3. **Exception Safety:**  A real `std::map` implementation usually provides stronger exception safety guarantees, ensuring that the data structure remains valid and consistent in the event of exceptions.
+
+4. **Standard Library Specific Implementations:** The C++ standard library's `std::map` implementation is highly optimized and thoroughly tested, considering the specifics of different platforms and compilers. `std::map` is usually based on a more general red-black tree implementation, potentially including engineering details and performance tuning.
+
+5. **Template Metaprogramming:** The real C++ standard library uses sophisticated template metaprogramming techniques to support generality, generic programming, and performance optimization.
