@@ -24,3 +24,13 @@ In the C++ Standard Template Library (STL), `std::map` is a highly useful and po
 [This code demonstrates the basic usage of `std::map`.](usage.cpp)
 
 
+## How `std::map` Works
+
+`std::map`'s internal implementation is typically based on a red-black tree.  Red-black trees inherently support sorting, and can be implemented to support key-value pair insertion. Therefore, `std::map` can be directly implemented using a red-black tree.  Refer to the red-black tree section for details on the underlying principles.
+
+
+## Implementing `map`
+
+[Detail](Implementation.md)
+
+
