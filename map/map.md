@@ -1,5 +1,10 @@
 # `std::map` in C++
 
+[Problem Description](Problem.md)
+
+[Solution](Solution.cpp)
+
+
 In the C++ Standard Template Library (STL), `std::map` is a highly useful and powerful container that provides a key-value pair storage mechanism. This makes `std::map` ideal for handling associative data with unique keys.
 
 ## Characteristics of `std::map`
@@ -120,4 +125,3 @@ High-frequency interview questions about `std::map` typically involve its basic 
    `insert` inserts an already constructed element into the map. If a key-value pair is provided, `insert` might lead to one or two extra copy or move constructions, first creating a temporary key-value pair object and then inserting it into the container.
 
    `emplace` is more efficient because it constructs the element directly inside the container, reducing unnecessary copy or move operations. However, the choice between `emplace` and `insert` depends on the specific situation; sometimes, using `insert` might be more appropriate for code clarity.
-   
