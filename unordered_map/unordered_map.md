@@ -20,3 +20,10 @@
 2. **Collision Resolution:** `unordered_map` resolves hash collisions using linked lists (or other data structures, depending on the implementation). When multiple elements map to the same bucket, they are stored in a linked list.
 
 3. **Load Factor and Rehashing:** The load factor is the ratio of the number of elements stored in the hash table to the number of buckets. When the load factor exceeds a certain threshold (typically around 1), `unordered_map` performs rehashing to increase the number of buckets and redistribute elements, maintaining efficiency.
+
+
+## Basic Usage of `unordered_map` in the C++ Standard Library
+
+[This code demonstrates basic `std::unordered_map` usage.](usage.cpp)
+
+
