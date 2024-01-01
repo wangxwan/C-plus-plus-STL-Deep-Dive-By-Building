@@ -27,3 +27,12 @@
 [This code demonstrates basic `std::unordered_map` usage.](usage.cpp)
 
 
+## How `unordered_map` Works
+
+The underlying implementation of `unordered_map` is a hash table, similar to the one implemented previously.  Further details on its workings won't be elaborated here.
+
+
+## Implementing `unordered_map`
+
+[Detail](Implementation.md)
+
