@@ -53,3 +53,33 @@ This custom `Unordered_map` class is functionally similar to `std::unordered_map
 8. **Default Construction of Elements:** In `std::unordered_map`, accessing a non-existent key with the subscript operator automatically creates an entry and default-constructs its value. The custom `Unordered_map`'s subscript operator seems to provide similar behavior, but this depends on the `HashTable` class's `insertKey` method implementation.
 9. **Copy Control Operations:** `std::unordered_map` defines copy constructor, move constructor, copy assignment operator, move assignment operator, and destructor. The custom `Unordered_map` might not provide all these, relying on the `HashTable` class's implementation.
 
+
+## Common Interview Questions
+
+1. **What's the difference between `unordered_map` and `map`?**
+
+   **Answer:**
+
+   - **Underlying Implementation:** `unordered_map` uses a hash table; `map` typically uses a red-black tree (a self-balancing binary search tree).
+   - **Performance:** For insertion, deletion, and lookup, `unordered_map` offers average O(1) time complexity; `map` provides O(log n).
+   - **Order:** Elements in `unordered_map` are unordered; elements in `map` are ordered by key.
+   - **Key Type Restrictions:** Keys in `unordered_map` require a hash function and equality comparison; keys in `map` only need to be comparable using the less-than operator.
+
+
+2. **How does `unordered_map` handle hash collisions?**
+
+   **Answer:** A common method is chaining: elements with the same hash value are stored in a linked list within the same hash bucket.  Lookup involves hashing the key, locating the bucket, and then traversing the linked list.
+
+
+3. **What are the performance bottlenecks of `unordered_map`?**
+
+   **Answer:**  The main bottlenecks are hash function quality and collision handling. A poor hash function leads to uneven bucket distribution, increasing time complexity.  High load factors (ratio of elements to buckets) also degrade performance, necessitating costly rehashing.
+
+
+4. **How can you optimize the performance of `unordered_map`?**
+
+   **Answer:**
+
+   - Use a high-quality hash function for even key distribution and reduced collisions.
+   - Adjust the load factor threshold to control rehashing frequency (lower reduces collisions but increases memory; higher increases collisions).
+   - Pre-allocate space using `reserve()` if the number of elements is known beforehand to reduce rehashing.
