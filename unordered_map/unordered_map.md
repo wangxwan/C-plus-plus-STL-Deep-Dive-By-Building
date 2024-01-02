@@ -36,3 +36,20 @@ The underlying implementation of `unordered_map` is a hash table, similar to the
 
 [Detail](Implementation.md)
 
+
+## Differences from the Standard Library
+
+Compared to `std::unordered_map`, a simplified implementation like this might have the following differences:
+
+This custom `Unordered_map` class is functionally similar to `std::unordered_map` in the STL, but there are several key differences.  Here are some potential discrepancies:
+
+1. **Exception Safety:** `std::unordered_map` provides exception safety guarantees, especially during operations that might throw exceptions.  For example, if the constructor or assignment operator of type `Key` or `Value` might throw, `std::unordered_map` ensures data integrity in case of exceptions. The custom `Unordered_map` might lack this unless the `HashTable` class provides such protection.
+2. **Iterator Support:** `std::unordered_map` provides iterators (forward and const) for traversing elements.  The `Unordered_map` class doesn't provide iterators, limiting traversal capabilities.
+3. **Method Completeness and Naming:** `std::unordered_map` has a complete set of member functions (`emplace`, `emplace_hint`, `find`, `equal_range`, `bucket`, `load_factor`, `rehash`, etc.). The custom `Unordered_map` has fewer methods, and naming might differ from STL conventions (e.g., `find` returns a boolean instead of an iterator).
+4. **Memory Management:** `std::unordered_map` uses highly optimized allocators for efficient memory usage and reuse. The custom `Unordered_map`'s memory management depends on the `HashTable` implementation and might not be as optimized.
+5. **Performance:** `std::unordered_map` is extensively optimized for performance (hash function, collision resolution). The custom `Unordered_map`'s performance depends on the `HashTable` implementation.
+6. **Portability and Compatibility:** `std::unordered_map` is part of the C++ standard, ensuring consistent behavior across standard-compliant compilers. The custom `Unordered_map` might behave differently across compilers or platforms unless carefully designed for cross-platform compatibility.
+7. **Template Parameters:** `std::unordered_map` lets users specify hash and key comparison functions. The custom `Unordered_map` appears to lack this, relying directly on the `HashTable`'s hash function and comparison logic.
+8. **Default Construction of Elements:** In `std::unordered_map`, accessing a non-existent key with the subscript operator automatically creates an entry and default-constructs its value. The custom `Unordered_map`'s subscript operator seems to provide similar behavior, but this depends on the `HashTable` class's `insertKey` method implementation.
+9. **Copy Control Operations:** `std::unordered_map` defines copy constructor, move constructor, copy assignment operator, move assignment operator, and destructor. The custom `Unordered_map` might not provide all these, relying on the `HashTable` class's implementation.
+
