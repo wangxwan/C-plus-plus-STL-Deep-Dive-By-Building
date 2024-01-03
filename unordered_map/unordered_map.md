@@ -1,5 +1,10 @@
 # `unordered_map`
 
+[Problem Description](Problem.md)
+
+[Solution](Solution.cpp)
+
+
 `std::unordered_map`, part of the C++ Standard Template Library (STL), is an associative container implemented using a hash table.  This allows for fast access to key-value pairs with an average time complexity of O(1).  `unordered_map` is widely popular for its efficient performance and flexible usage.
 
 ## Characteristics of `unordered_map`
