@@ -19,3 +19,10 @@
 **Lookup:**  The average time complexity of finding elements with a given key is also O(log n).  If multiple elements share the same key, STL provides the `equal_range` function to efficiently retrieve the range of all elements with that key.
 
 **Deletion:** Deleting elements with a specific key has an average time complexity of O(log n). Deleting all elements with a specific key remains logarithmic, although the actual number of operations increases.
+
+
+## Basic Usage in the C++ Standard Library
+
+[This code demonstrates basic `std::multimap` usage.](usage.cpp)
+
+
