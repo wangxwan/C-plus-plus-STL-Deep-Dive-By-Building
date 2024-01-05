@@ -32,3 +32,14 @@ Because `multimap` requires ordering, it's typically implemented using a red-bla
 
 [Detail](Implementation.md)
 
+## Differences from the Standard Library
+
+Compared to the C++ Standard Library's `std::multimap`, a simplified implementation like this one may have the following differences:
+
+**Completeness and Functionality:** This code provides a basic Red-Black tree implementation, including insertion and inorder traversal, but implements iterator-based interface functions. `std::multimap` is a full-fledged container class offering significantly more functionality.
+
+**Performance and Stability of Standard Library Implementation:** The C++ Standard Library's `std::multimap` is highly optimized and thoroughly tested, exhibiting excellent performance and stability. It provides efficient operations under various conditions, whereas this code may not possess the same performance characteristics and robustness.
+
+**Genericity and Error Handling:** Standard library containers are generic and can store various data types. This code is hardcoded for specific key-value pair data types. `std::multimap` offers greater genericity and more robust error handling.
+
+**Memory Management:** This code doesn't include detailed memory management, such as resource deallocation.  In a real-world application, correct memory allocation and deallocation must be ensured, whereas the standard library handles these details.
