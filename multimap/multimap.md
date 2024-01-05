@@ -43,3 +43,8 @@ Compared to the C++ Standard Library's `std::multimap`, a simplified implementat
 **Genericity and Error Handling:** Standard library containers are generic and can store various data types. This code is hardcoded for specific key-value pair data types. `std::multimap` offers greater genericity and more robust error handling.
 
 **Memory Management:** This code doesn't include detailed memory management, such as resource deallocation.  In a real-world application, correct memory allocation and deallocation must be ensured, whereas the standard library handles these details.
+
+
+## Common Interview Questions
+
+[Detail](Interview.md)
