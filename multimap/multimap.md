@@ -1,5 +1,10 @@
 # `std::multimap`
 
+[Problem Description](Problem.md)
+
+[Solution](Solution.cpp)
+
+
 `std::multimap` is an associative container in the C++ Standard Template Library (STL) that stores key-value pairs, allowing duplicate keys.
 
 ## Characteristics
