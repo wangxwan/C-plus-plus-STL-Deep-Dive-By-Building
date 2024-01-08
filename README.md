@@ -22,7 +22,7 @@ This repository contains both detailed learning notes and the implementation pro
 - **Unordered Maps:** [unordered_map](./unordered_map/unordered_map.md)
 - **Ordered Multimaps:** [multimap](./multimap/multimap.md)
 - **Stacks:** [stack](./stack/stack.md)
-- **Queues:** [queue](./queue)
+- **Queues:** [queue](./queue/queue.md)
 - **Priority Queues:** [priority_queue](./priority_queue)
 
 ## Key Features
