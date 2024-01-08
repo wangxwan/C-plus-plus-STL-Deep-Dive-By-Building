@@ -42,3 +42,10 @@ The performance of `std::stack` is largely dependent on the performance characte
 * **Using `std::list` as the underlying container:** Offers fast insertion and deletion but slower random access.
 
 Therefore, choosing the underlying container requires a trade-off based on specific operational needs and performance considerations.
+
+
+## Hands-on Implementation
+
+The following example demonstrates how to implement a stack using C++ standard library containers (e.g., `std::deque`), providing basic stack operations. Note that the actual `std::stack` implementation is more complex and robust.
+
+[Detail](Implementation.md)
