@@ -49,3 +49,23 @@ Therefore, choosing the underlying container requires a trade-off based on speci
 The following example demonstrates how to implement a stack using C++ standard library containers (e.g., `std::deque`), providing basic stack operations. Note that the actual `std::stack` implementation is more complex and robust.
 
 [Detail](Implementation.md)
+
+
+## Differences from the Standard Library
+
+This `MyStack` implementation differs from `std::stack` in the C++ STL in several key aspects:
+
+* **Underlying Container Selection:** This code allows users to choose different underlying containers (e.g., `std::deque` or `std::list`) when instantiating a `MyStack` object.  In contrast, `std::stack` in the C++ STL defaults to `std::deque` and doesn't offer a direct option to select a different container.
+
+* **Flexibility:** This code is more flexible, allowing the selection of different underlying container types based on specific needs, making the stack implementation more general-purpose and customizable.
+
+* **Error Handling:** This code incorporates error handling when popping and accessing the top element, using exceptions to handle the case of an empty stack.  `std::stack` in the C++ STL typically doesn't provide similar error handling; users must handle empty stack conditions themselves.
+
+* **Feature Completeness:** `std::stack` in the C++ STL is a full container adapter, providing additional functionalities such as `emplace`, `swap`, etc., while this code only provides basic stack operations.
+
+* **Iterators and Member Functions:** `std::stack` in the C++ STL offers specific member functions and iterators, allowing for more flexible stack manipulation, whereas this code only provides basic stack operation functions.
+
+
+## Common Interview Questions
+
+[Detail](Interview.md)
