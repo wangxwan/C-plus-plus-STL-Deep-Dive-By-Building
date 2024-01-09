@@ -1,5 +1,10 @@
 # Queue
 
+[Problem Description](Problem.md)
+
+[Solution](Implementation.cpp)
+
+
 `std::queue` is a container adapter in the C++ Standard Template Library (STL) that provides queue functionality (FIFO, First-In, First-Out).
 
 A queue is a First-In, First-Out (FIFO) data structure, meaning the element that was added first will be the first one removed.  Think of a line at a ticket counter; the first person in line is the first person served and leaves the line.
