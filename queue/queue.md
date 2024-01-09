@@ -17,3 +17,8 @@ A queue is a First-In, First-Out (FIFO) data structure, meaning the element that
 **Space Complexity:** Since `std::queue` uses an underlying container to store elements, its space complexity depends on the underlying container used.
 
 For example, when using `std::deque`, the space complexity is generally linear O(n), where n is the number of elements in the queue.
+
+
+## Basic Usage in the C++ Standard Library
+
+[This code demonstrates basic usage.](usage.cpp)
