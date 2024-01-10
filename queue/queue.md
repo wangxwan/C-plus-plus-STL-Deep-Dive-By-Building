@@ -27,3 +27,8 @@ For example, when using `std::deque`, the space complexity is generally linear O
 ## Basic Usage in the C++ Standard Library
 
 [This code demonstrates basic usage.](usage.cpp)
+
+
+## Hands-on Implementation
+
+[Detail](Implementation.md)
