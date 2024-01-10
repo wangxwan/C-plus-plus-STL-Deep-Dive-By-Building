@@ -32,3 +32,23 @@ For example, when using `std::deque`, the space complexity is generally linear O
 ## Hands-on Implementation
 
 [Detail](Implementation.md)
+
+
+## Differences from the Standard Library
+
+Compared to `std::queue` in the C++ Standard Template Library (STL), the provided `MyQueue` implementation has the following differences:
+
+**Underlying Container Selection:** This code allows users to choose different underlying containers (e.g., `std::deque`, `std::list`, or `std::vector`) when instantiating a `MyQueue` object.  The C++ STL `std::queue` defaults to `std::deque` and doesn't offer the option to directly select a different container.
+
+**Exception Handling:** This code adds error handling when popping and accessing the front element of the queue, using exceptions to handle the empty queue case.  The C++ STL `std::queue` typically doesn't provide similar error handling; users must handle the empty queue case themselves.
+
+**Functionality Completeness:** The C++ STL `std::queue` is a complete container adapter providing additional functionalities such as `emplace`, `swap`, etc., while this code only provides basic queue operations.
+
+**Iterators and Member Functions:** The C++ STL `std::queue` provides specific member functions and iterators, allowing for more flexible queue manipulation. This code only provides basic queue operation functions.
+
+
+## Common Interview Questions
+
+Interview questions about queues often cover fundamental concepts, data structure design, algorithms, and application scenarios. Here are some frequently asked questions and their answers.
+
+[Detail](Interview.md)
