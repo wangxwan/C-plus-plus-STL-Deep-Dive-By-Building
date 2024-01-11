@@ -6,3 +6,8 @@ The C++ standard library uses `std::make_heap`, `std::push_heap`, and `std::pop_
 
 [This code demonstrates a custom implementation.](usage.cpp)
 
+## How Heaps Work
+
+A heap is a specialized complete binary tree that satisfies the following properties:
+
+[Detail](principle.md)
