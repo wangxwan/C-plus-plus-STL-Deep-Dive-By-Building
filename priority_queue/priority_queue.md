@@ -25,3 +25,8 @@ The STL's `std::priority_queue` defaults to using `std::vector` as its underlyin
 The provided code does not use STL's heap algorithms like `std::make_heap`, `std::push_heap`, and `std::pop_heap` to maintain the heap property. Instead, it uses manually implemented heap operations, `heapifyUp` and `heapifyDown`.
 
 The code uses custom exception handling for empty queue situations, while STL's `std::priority_queue` might throw a `std::out_of_range` exception.
+
+
+## High-Frequency Interview Questions
+
+[Detail](Interview.md)
